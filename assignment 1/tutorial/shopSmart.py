@@ -30,8 +30,12 @@ def shopSmart(orderList, fruitShops):
         fruitShops: List of FruitShops
     """
     "*** YOUR CODE HERE ***"
-    return None
+    SetOfShop ={}
+    for shop in fruitShops:
+        SetOfShop[shop.getName()] = shop.getPriceOfOrder(orderList)
+        print("%s = fruit $ %f = price" % (shop.getName(),SetOfShop[shop.getName()]))
 
+    return "<FruitShop: " + min((price,shop) for shop,price in SetOfShop.items())[1] + ">"
 
 if __name__ == '__main__':
     "This code runs when you invoke the script from the command line"
