@@ -2,13 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="211aef8c-b88d-47ef-8223-7bc319690029" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assinment1/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/addition.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment 1/tutorial/addition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/buyLotsOfFruit.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment 1/tutorial/buyLotsOfFruit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/shopSmart.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment 1/tutorial/shopSmart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/._tutorial" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/._tutorial" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/._projectParams.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/._projectParams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/._test_cases" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/._test_cases" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/._CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/._CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/._q1" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/._q1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/._q2" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/._q2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/._q3" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/._q3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q1/._CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q1/._CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q1/._addition1.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q1/._addition1.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q1/._addition1.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q1/._addition1.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q1/._addition2.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q1/._addition2.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q1/._addition2.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q1/._addition2.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q1/._addition3.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q1/._addition3.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q1/._addition3.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q1/._addition3.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q2/._CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q2/._CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q2/._food_price1.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q2/._food_price1.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q2/._food_price1.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q2/._food_price1.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q2/._food_price2.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q2/._food_price2.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q2/._food_price2.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q2/._food_price2.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q2/._food_price3.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q2/._food_price3.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q2/._food_price3.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q2/._food_price3.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q3/._CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q3/._CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q3/._select_shop1.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q3/._select_shop1.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q3/._select_shop1.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q3/._select_shop1.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q3/._select_shop2.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q3/._select_shop2.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q3/._select_shop2.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q3/._select_shop2.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q3/._select_shop3.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q3/._select_shop3.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/__MACOSX/tutorial/test_cases/q3/._select_shop3.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/__MACOSX/tutorial/test_cases/q3/._select_shop3.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/addition.py" beforeDir="false" afterPath="$PROJECT_DIR$/assinment1/addition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/autograder.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/autograder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/buyLotsOfFruit.py" beforeDir="false" afterPath="$PROJECT_DIR$/assinment1/buyLotsOfFruit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/grading.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/grading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/projectParams.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/projectParams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/shop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/shopAroundTown.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/shopAroundTown.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/shopSmart.py" beforeDir="false" afterPath="$PROJECT_DIR$/assinment1/shopSmart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/testClasses.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/testClasses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/testParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/testParser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q1/CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q1/CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q1/addition1.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q1/addition1.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q1/addition1.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q1/addition1.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q1/addition2.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q1/addition2.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q1/addition2.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q1/addition2.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q1/addition3.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q1/addition3.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q1/addition3.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q1/addition3.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q2/CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q2/CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q2/food_price1.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q2/food_price1.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q2/food_price1.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q2/food_price1.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q2/food_price2.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q2/food_price2.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q2/food_price2.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q2/food_price2.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q2/food_price3.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q2/food_price3.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q2/food_price3.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q2/food_price3.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q3/CONFIG" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q3/CONFIG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q3/select_shop1.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q3/select_shop1.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q3/select_shop1.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q3/select_shop1.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q3/select_shop2.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q3/select_shop2.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q3/select_shop2.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q3/select_shop2.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q3/select_shop3.solution" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q3/select_shop3.solution" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/test_cases/q3/select_shop3.test" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/test_cases/q3/select_shop3.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/textDisplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/textDisplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/town.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/town.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/tutorialTestClasses.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/tutorialTestClasses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment 1/tutorial/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/tutorial/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +101,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hayato Waki\PycharmProjects\csc665\assinment1" />
       <recent name="C:\Users\Hayato Waki\PycharmProjects\csc665\assignment 1" />
     </key>
   </component>
@@ -67,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580418063198</updated>
-      <workItem from="1580418134354" duration="6069000" />
+      <workItem from="1580418134354" duration="6688000" />
     </task>
     <servers />
   </component>
