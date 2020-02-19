@@ -86,7 +86,38 @@ def depthFirstSearch(problem):
     print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
     print("Start's successors:", problem.getSuccessors(problem.getStartState()))
     """
+    # problem is class  PositionSearchProblem(search.SearchProblem) in searchAgents.py
     "*** YOUR CODE HERE ***"
+    # tinyMazeSearch を真似する
+    from game import Directions
+    from util import Stack
+
+    print("Start:", problem.getStartState())
+    print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
+    print("Start's successors:", problem.getSuccessors(problem.getStartState()))
+
+    frontier = Stack()
+    stateTuple = (problem.getStartState(),[])
+    frontier.push(stateTuple)
+
+    explored = []  #List of pased node
+
+    explored.append(problem.getStartState())
+
+    while not frontier.isEmpty():
+
+        current_node = frontier.pop() # current_node = [(〇,〇),south, 1]
+       # print("current_node",current_node[1])
+        explored.append(current_node[0])
+
+        if problem.isGoalState(current_node[0]):
+            return current_node[1]
+        else:
+            children = problem.getSuccessors(current_node[0])
+            for child in children:
+                if not child[0] in explored:
+                    frontier.push((child[0],current_node[1] + [child[1]]))
+
     util.raiseNotDefined()
 
 def breadthFirstSearch(problem):
@@ -97,6 +128,8 @@ def breadthFirstSearch(problem):
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
+
+
     util.raiseNotDefined()
 
 def nullHeuristic(state, problem=None):
