@@ -142,15 +142,38 @@ def breadthFirstSearch(problem):
                     explored.append(child[0])
                     frontier.push((child[0], current_node[1] + [child[1]]))
 
-    util.raiseNotDefined()
+   # util.raiseNotDefined()
     return 0
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
 
+    from util import PriorityQueue
+
+    frontier = PriorityQueue()
+    frontier.push((problem.getStartState(),[]), 0)
+
+    explored = []  # List of pased node
+
+    while not frontier.isEmpty():
+        current_node = frontier.pop()  # current_node = [(〇,〇),south, 1]
+
+        if problem.isGoalState(current_node[0]):
+            return current_node[1]
+        if current_node[0] not in explored:
+            children = problem.getSuccessors(current_node[0])
+            explored.append(current_node[0])
+
+            for child in children:
+                newCost_action = [x for x in current_node[1]]
+
+                if child[0] not in explored:
+                    newCost_action.append(child[1])
+                    frontier.push((child[0],newCost_action),problem.getCostOfActions(newCost_action))
 
     util.raiseNotDefined()
+    return 0
 
 def nullHeuristic(state, problem=None):
     """
@@ -162,8 +185,31 @@ def nullHeuristic(state, problem=None):
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    from util import PriorityQueue
 
+    frontier = PriorityQueue()
+    frontier.push((problem.getStartState(), []), 0)
+
+    explored = []  # List of pased node
+
+    while not frontier.isEmpty():
+        current_node = frontier.pop()  # current_node = [(〇,〇),south, 1]
+
+        if problem.isGoalState(current_node[0]):
+            return current_node[1]
+        if current_node[0] not in explored:
+            children = problem.getSuccessors(current_node[0])
+            explored.append(current_node[0])
+
+            for child in children:
+                newCost_action = [x for x in current_node[1]]
+
+                if child[0] not in explored:
+                    newCost_action.append(child[1])
+                    frontier.push((child[0], newCost_action), problem.getCostOfActions(newCost_action) + heuristic(child[0],problem))
+
+    util.raiseNotDefined()
+    return 0
 
 # Abbreviations
 bfs = breadthFirstSearch
