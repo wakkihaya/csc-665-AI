@@ -106,7 +106,6 @@ def depthFirstSearch(problem):
         current_node = frontier.pop() # current_node = [(〇,〇),south, 1]
 
         if problem.isGoalState(current_node[0]):
-            print("current_node[1][1:]", current_node[1][1:])
             print("current_node[1][", current_node[1])
             return current_node[1]
         else:
