@@ -252,6 +252,31 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
         legal moves.
         """
         "*** YOUR CODE HERE ***"
+
+        def expectimax(agent, depth, gameState):
+            if gameState.isLose() or gameState.isWin() or depth == self.depth:
+                return self.evaluationFunction(gameState)
+            if agent == 0:
+                return max(expectimax(1, depth, gameState.generateSuccessor(agent, newState)) for newState in gameState.getLegalActions(agent))
+            else:
+                newAgent = agent + 1
+                if gameState.getNumAgents() == newAgent:
+                    newAgent = 0
+                if newAgent == 0:
+                    depth += 1
+                return sum(expectimax(newAgent, depth, gameState.generateSuccessor(agent, newState)) for newState in
+                           gameState.getLegalActions(agent))/float(len(gameState.getLegalActions(agent)))
+
+        maximum = float("-inf")
+        action = Directions.WEST
+        for agentState in gameState.getLegalActions(0):
+            utility = expectimax(1, 0, gameState.generateSuccessor(0, agentState))
+            if utility > maximum or maximum == float("-inf"):
+                maximum = utility
+                action = agentState
+
+        return action
+
         util.raiseNotDefined()
 
 def betterEvaluationFunction(currentGameState):
@@ -262,6 +287,30 @@ def betterEvaluationFunction(currentGameState):
     DESCRIPTION: <write something here so we know what you did>
     """
     "*** YOUR CODE HERE ***"
+    newPos = currentGameState.getPacmanPosition()
+    newFood = currentGameState.getFood()
+    newGhostStates = currentGameState.getGhostStates()
+
+    "*** YOUR CODE HERE ***"
+    # min distance between pacman and food
+    min_distance = -1
+    newFoodList = newFood.asList()
+    for food in newFoodList:
+        distance = manhattanDistance(newPos, food)
+        if min_distance == -1 or distance < min_distance:
+            min_distance = distance
+
+    # distance between pacman and ghost
+    distance_ghost = 1
+    proximity = 0
+    for ghostPos in currentGameState.getGhostPositions():
+        distance = manhattanDistance(newPos, ghostPos)
+        distance_ghost += distance
+        if distance <= 1:
+            proximity += 1
+
+    return currentGameState.getScore() + (1 / min_distance) - (1 / distance_ghost) - proximity
+
     util.raiseNotDefined()
 
 # Abbreviation
