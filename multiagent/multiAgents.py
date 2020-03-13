@@ -79,7 +79,7 @@ class ReflexAgent(Agent):
         newFoodList = newFood.asList()
         for food in newFoodList:
             distance = manhattanDistance(newPos,food)
-            if distance < min_distance or min_distance == -1:
+            if min_distance == -1 or distance < min_distance:
                 min_distance = distance
 
         # distance between pacman and ghost
@@ -153,6 +153,29 @@ class MinimaxAgent(MultiAgentSearchAgent):
         Returns whether or not the game state is a losing state
         """
         "*** YOUR CODE HERE ***"
+        def minimax(agent, depth, gameState):
+            if gameState.isLose() or gameState.isWin() or depth == self.depth:
+                return self.evaluationFunction(gameState)
+            if agent == 0:
+                return max(minimax(1, depth, gameState.generateSuccessor(agent, newState)) for newState in gameState.getLegalActions(agent))
+            else:
+                newAgent = agent + 1
+                if gameState.getNumAgents() == newAgent:
+                    newAgent = 0
+                if newAgent == 0:
+                    depth += 1
+                return min(minimax(newAgent, depth, gameState.generateSuccessor(agent, newState)) for newState in gameState.getLegalActions(agent))
+
+        maximum = float("-inf")
+        action = Directions.WEST
+        for State in gameState.getLegalActions(0):
+            utility = minimax(1, 0, gameState.generateSuccessor(0, State))
+            if utility > maximum or maximum == float("-inf"):
+                maximum = utility
+                action = State
+
+        return action
+
         util.raiseNotDefined()
 
 class AlphaBetaAgent(MultiAgentSearchAgent):
