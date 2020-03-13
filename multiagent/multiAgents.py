@@ -188,6 +188,55 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
         Returns the minimax action using self.depth and self.evaluationFunction
         """
         "*** YOUR CODE HERE ***"
+
+        def max_value(agent, depth, gameState, a, b):
+            v = float("-inf")
+            for newState in gameState.getLegalActions(agent):
+                v = max(v, alphabeta(1, depth, gameState.generateSuccessor(agent, newState),a,b))
+                if v > b:
+                    return v
+                a = max(a,v)
+            return v
+
+        def min_value(agent, depth, gameState, a, b):
+            v = float("+inf")
+
+            newAgent = agent + 1  # calculate the next agent and increase depth accordingly.
+            if gameState.getNumAgents() == newAgent:
+                newAgent = 0
+            if newAgent == 0:
+                depth += 1
+
+            for newState in gameState.getLegalActions(agent):
+                v = min(v,alphabeta(newAgent,depth, gameState.generateSuccessor(agent, newState),a,b))
+                if v < a:
+                    return v
+                b = min(b,v)
+            return v
+
+        def alphabeta(agent, depth, gameState, a, b):
+            if gameState.isLose() or gameState.isWin() or depth == self.depth:
+                return self.evaluationFunction(gameState)
+            if agent == 0:
+                return max_value(agent,depth, gameState, a, b)
+            else:
+                return min_value(agent,depth, gameState, a, b)
+
+        utility = float("-inf")
+        action = Directions.WEST
+        alpha = float("-inf")
+        beta = float("inf")
+        for agentState in gameState.getLegalActions(0):
+            ghostValue = alphabeta(1, 0, gameState.generateSuccessor(0, agentState), alpha, beta)
+            if ghostValue > utility:
+                utility = ghostValue
+                action = agentState
+            if utility > beta:
+                return utility
+            alpha = max(alpha, utility)
+
+        return action
+
         util.raiseNotDefined()
 
 class ExpectimaxAgent(MultiAgentSearchAgent):
