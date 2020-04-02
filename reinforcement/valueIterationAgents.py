@@ -89,12 +89,6 @@ class ValueIterationAgent(ValueEstimationAgent):
           value function stored in self.values.
         """
         "*** YOUR CODE HERE ***"
-        # value = 0
-        # transitions = self.mdp.getTransitionStatesAndProbs(state, action)
-        # for transition in transitions:
-        #     value += transition[1] * (
-        #                 self.mdp.getReward(state, action, transition[0]) + self.discount * self.values[transition[0]])
-        # return value
         temp = 0
         for sprime, prob in self.mdp.getTransitionStatesAndProbs(state, action):
             temp += prob * (self.mdp.getReward(state, action, sprime) + self.discount * self.values[sprime])
