@@ -207,19 +207,14 @@ class ApproximateQAgent(PacmanQAgent):
            Should update your weights based on transition
         """
         "*** YOUR CODE HERE ***"
-        features = self.featExtractor.getFeatures(state, action)
-        features_list = features.sortedKeys()
-        counter = 0
-        for feature in features:
-            difference = 0
-            if len(self.getLegalActions(nextState)) == 0:
-                difference = reward - self.getQValue(state, action)
-            else:
-                difference = (reward + self.discount * max([self.getQValue(nextState, nextAction) for nextAction in
-                                                            self.getLegalActions(nextState)])) - self.getQValue(state,
-                                                                                                                action)
-            self.weights[feature] = self.weights[feature] + self.alpha * difference * features[feature]
-            counter += 1
+        featureVector = self.featExtractor.getFeatures(state, action)
+
+        maxQFromNextState = self.computeValueFromQValues(nextState)
+        actionQValue = self.getQValue(state, action)
+
+        for feature in featureVector:
+            self.weights[feature] += self.alpha * (reward + self.discount * maxQFromNextState - actionQValue) * \
+                                     featureVector[feature]
 
     def final(self, state):
         "Called at the end of each game."
